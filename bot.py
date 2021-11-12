@@ -1,3 +1,4 @@
+import keep_alive
 import discord
 import os
 import random
@@ -21,4 +22,5 @@ async def on_message(message):
   if message.content.startswith('!maw'):
     await message.channel.send(random.choice([img2, img1, img3, img4]))
 
+keep_alive.keep_alive()
 client.run(os.getenv('TOKEN'))
