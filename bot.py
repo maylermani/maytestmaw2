@@ -1,24 +1,18 @@
-import discord
-import os
-import random
+import discord  #импортирует библиотеку discord.py
+import os #импортирует библиотеку os, но она используется только для получения переменной TOKEN из файла .env
 
-client = discord.Client()
-
-img1 = 'https://static.wikia.nocookie.net/leagueoflegends/images/3/35/Kog%27Maw_Pug%27MawSkin.jpg/revision/latest/scale-to-width-down/1000?cb=20210922235126'
-img2 = 'https://static.wikia.nocookie.net/leagueoflegends/images/b/b2/Kog%27Maw_MonarchSkin.jpg/revision/latest/scale-to-width-down/1000?cb=20181021120652'
-img3 = 'https://static.wikia.nocookie.net/leagueoflegends/images/0/01/Kog%27Maw_LionDanceSkin.jpg/revision/latest/scale-to-width-down/1000?cb=20181021042930'
-img4 = 'https://static.wikia.nocookie.net/leagueoflegends/images/3/30/Kog%27Maw_JurassicSkin.jpg/revision/latest/scale-to-width-down/1000?cb=20181021104244'
+client = discord.Client()   #связь с Discord. Декоратор @client.event() используется для регистрации события.
 
 @client.event
-async def on_ready():
-  print('We have logged in as {0.user}'.format(client))
+async def on_ready():  #бот готов к использованию
+    print('We have logged in as {0.user}'.format(client))
 
 @client.event
-async def on_message(message):
-  if message.author == client.user:
-    return
+async def on_message(message):  #бот получает сообщение
+    if message.author == client.user: #если сообщение от самих себя 
+        return
 
-  if message.content.startswith('!maw'):
-    await message.channel.send(random.choice([img2, img1, img3, img4]))
+    if message.content.startswith('$hello'):
+        await message.channel.send('Hello!')
 
-client.run(os.getenv('TOKEN'))
+    client.run(os.getenv('TOKEN'))  
