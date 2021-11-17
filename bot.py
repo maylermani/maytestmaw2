@@ -14,6 +14,8 @@ img7 = 'https://static.wikia.nocookie.net/leagueoflegends/images/1/19/Kog%27Maw_
 
 baklazhan = "https://808.media/wp-content/uploads/2021/11/baklazhan-1.gif"
 
+ragnaros = "https://thumbs.gfycat.com/FlatElegantArmedcrab-size_restricted.gif"
+
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
@@ -28,5 +30,8 @@ async def on_message(message):
 
   if message.content.startswith('!хуй'):
     await message.channel.send(baklazhan)
+
+  if message.content.startswith('!злюся'):
+    await message.channel.send(ragnaros)
 
 client.run(os.getenv('TOKEN'))
