@@ -20,6 +20,15 @@ zluzyaCat = "http://img2.joyreactor.cc/pics/comment/%D0%B3%D0%B8%D1%84%D0%BA%D0%
 
 
 cat1 = "https://i.gifer.com/1Rda.gif"
+cat2 = "https://i.gifer.com/pMH.gif"
+cat3 = "https://i.gifer.com/sSD.gif"
+cat4 = "https://i.gifer.com/ii.gif"
+cat5 = "https://i.gifer.com/1Cs3.gif"
+cat6 = "https://i.gifer.com/MAOR.gif"
+cat7 = "https://i.gifer.com/7ZFG.gif"
+cat8 = "https://i.gifer.com/Aq.gif"
+cat9 = "https://i.gifer.com/v5T.gif"
+cat10 = "https://i.gifer.com/WU7.gif"
 
 @client.event
 async def on_ready():
@@ -40,6 +49,6 @@ async def on_message(message):
     await message.channel.send(random.choice([ragnaros, zluzyaCat]))
 
   if message.content.startswith('!кот'):
-    await message.channel.send(random.choice([cat1, cat1]))
+    await message.channel.send(random.choice([cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10]))
 
 client.run(os.getenv('TOKEN'))
