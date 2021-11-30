@@ -29,6 +29,12 @@ cat7 = "https://i.gifer.com/7ZFG.gif"
 cat8 = "https://i.gifer.com/Aq.gif"
 cat9 = "https://i.gifer.com/v5T.gif"
 cat10 = "https://i.gifer.com/WU7.gif"
+cat11 = "https://img.btdmp.com/files/10224256/2021/09/18/16319758899dce7d9360.gif" 
+cat12 = "https://i.gifer.com/3Qe6.gif"
+cat13 = "https://i.gifer.com/JtaW.gif"
+cat14 = "https://i.gifer.com/11tv.gif"
+cat15 = "https://i.gifer.com/fzml.gif"
+cat16 = "https://i.gifer.com/Ao.gif"
 
 @client.event
 async def on_ready():
@@ -49,6 +55,6 @@ async def on_message(message):
     await message.channel.send(random.choice([ragnaros, zluzyaCat]))
 
   if message.content.startswith('!кот'):
-    await message.channel.send(random.choice([cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10]))
+    await message.channel.send(random.choice([cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13, cat14, cat15, cat16]))
 
 client.run(os.getenv('TOKEN'))
