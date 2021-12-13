@@ -32,7 +32,9 @@ cat12 = "https://i.gifer.com/11tv.gif"
 cat13 = "https://i.gifer.com/Ao.gif"
 cat14 = "https://c.tenor.com/Ls7KslPkMqYAAAAd/surprised-cat-omg-wow.gif"
 
+
 testcat = "https://media.discordapp.net/attachments/862570143754223626/919840530131718194/happy-kitty.gif"
+
 
 @client.event
 async def on_ready():
@@ -57,5 +59,6 @@ async def on_message(message):
 
   if message.content.startswith('!тесткот'):
     await message.channel.send(testcat)
+
 
 client.run(os.getenv('TOKEN'))
