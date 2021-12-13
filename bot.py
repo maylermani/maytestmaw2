@@ -29,18 +29,16 @@ async def on_message(message):
   if message.author == client.user:
     return
 
-  if message.content.startswith('!maw'):
+  if '!maw' in message.content:
     await message.channel.send(random.choice([img2, img1, img3, img4, img5, img6, img7]))
 
-  if message.content.startswith('!баклажан'):
-    await message.channel.send(baklazhan)
-  if message.content.startswith('!хуй'):
+  if '!хуй' in message.content or '!баклажан' in message.content:
     await message.channel.send(baklazhan)
 
   if '!злюся' in message.content:
     await message.channel.send(random.choice([ragnaros, zluzyaCat]))
 
-  if message.content.startswith('!кот'):
+  if '!кот' in message.content:
     random_index = random.randrange(len(cats))
     await message.channel.send(cats[random_index])
 
