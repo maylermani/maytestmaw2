@@ -17,22 +17,8 @@ baklazhan = "https://808.media/wp-content/uploads/2021/11/baklazhan-1.gif"
 ragnaros = "https://thumbs.gfycat.com/FlatElegantArmedcrab-size_restricted.gif"
 zluzyaCat = "http://img2.joyreactor.cc/pics/comment/%D0%B3%D0%B8%D1%84%D0%BA%D0%B0-%D0%BA%D0%BE%D1%82%D1%8D-%D1%80%D1%83%D0%BA%D0%B0-%D0%B7%D0%B0%D0%B4%D1%83%D0%BC%D0%B0%D0%BB%D1%81%D1%8F-2422589.gif"
 
-cat1 = "https://i.gifer.com/1Rda.gif"
-cat2 = "https://i.gifer.com/sSD.gif"
-cat3 = "https://i.gifer.com/1Cs3.gif"
-cat4 = "https://i.gifer.com/MAOR.gif"
-cat5 = "https://i.gifer.com/7ZFG.gif"
-cat6 = "https://i.gifer.com/Aq.gif"
-cat7 = "https://i.gifer.com/v5T.gif"
-cat8 = "https://i.gifer.com/WU7.gif"
-cat9 = "https://img.btdmp.com/files/10224256/2021/09/18/16319758899dce7d9360.gif" 
-cat10 = "https://i.gifer.com/3Qe6.gif"
-cat11 = "https://i.gifer.com/JtaW.gif"
-cat12 = "https://i.gifer.com/11tv.gif"
-cat13 = "https://i.gifer.com/Ao.gif"
-cat14 = "https://c.tenor.com/Ls7KslPkMqYAAAAd/surprised-cat-omg-wow.gif"
+cats = ["https://media.discordapp.net/attachments/862570143754223626/919840530131718194/happy-kitty.gif","https://media.discordapp.net/attachments/862570143754223626/919840624470024202/smiling-cat-creepy-cat.gif", "https://media.discordapp.net/attachments/862570143754223626/919856864043352114/Ao.gif?width=603&height=603", "https://media.discordapp.net/attachments/862570143754223626/919857441372532746/surprised-cat-omg-wow.gif", "https://media.discordapp.net/attachments/862570143754223626/919862131061571634/3Qe6.gif","https://media.discordapp.net/attachments/862570143754223626/919862131506159647/WU7.gif","https://media.discordapp.net/attachments/862570143754223626/919862425707249684/v5T.gif","https://media.discordapp.net/attachments/862570143754223626/919862829920686110/funny-cat-2020-19.gif?width=426&height=603","https://media.discordapp.net/attachments/862570143754223626/919862858072866827/funny-cat-59.gif","https://media.discordapp.net/attachments/862570143754223626/919863003841695754/funny-cat-2020-9.gif","https://media.discordapp.net/attachments/862570143754223626/919863021726232596/funny-cat-2020-10.gif?width=524&height=603","https://media.discordapp.net/attachments/862570143754223626/919863211799486474/funny-cat-2020-14.gif","https://media.discordapp.net/attachments/862570143754223626/919863225653276722/funny-cat-2020-21.gif", "https://media.discordapp.net/attachments/862570143754223626/919863567728140349/Aq.gif","https://media.discordapp.net/attachments/862570143754223626/919863571062603796/cat-cutehg.gif?width=603&height=603","https://media.discordapp.net/attachments/862570143754223626/919863769440596058/MAOR.gif","https://media.discordapp.net/attachments/862570143754223626/919864252771229726/1Rda.gif","https://media.discordapp.net/attachments/862570143754223626/919864273587544074/dance-dancing.gif","https://media.discordapp.net/attachments/862570143754223626/919864423114481665/cat-cute.gif","https://media.discordapp.net/attachments/862570143754223626/919864439610683443/sleep-cat-two-cat.gif?width=567&height=603","https://media.discordapp.net/attachments/862570143754223626/919864416722362368/suspense-suspicious.gif?width=473&height=603" ]
 
-testcat = "https://media.discordapp.net/attachments/862570143754223626/919840530131718194/happy-kitty.gif"
 
 @client.event
 async def on_ready():
@@ -53,9 +39,7 @@ async def on_message(message):
     await message.channel.send(random.choice([ragnaros, zluzyaCat]))
 
   if message.content.startswith('!кот'):
-    await message.channel.send(random.choice([cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13, cat14]))
-
-  if message.content.startswith('!ntcnrjn'):
-    await message.channel.send(testcat)
+    random_index = random.randrange(len(cats))
+    await message.channel.send(cats[random_index])
 
 client.run(os.getenv('TOKEN'))
