@@ -37,7 +37,7 @@ async def on_message(message):
   if message.content.startswith('!хуй'):
     await message.channel.send(baklazhan)
 
-  if message.content.startswith('!злюся'):
+  if '!злюся' in message.content:
     await message.channel.send(random.choice([ragnaros, zluzyaCat]))
 
   if message.content.startswith('!кот'):
