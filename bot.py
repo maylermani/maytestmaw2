@@ -31,10 +31,13 @@ cat11 = "https://i.gifer.com/JtaW.gif"
 cat12 = "https://i.gifer.com/11tv.gif"
 cat13 = "https://i.gifer.com/Ao.gif"
 cat14 = "https://c.tenor.com/Ls7KslPkMqYAAAAd/surprised-cat-omg-wow.gif"
+<<<<<<< HEAD
 
 
 testcat = "https://media.discordapp.net/attachments/862570143754223626/919840530131718194/happy-kitty.gif"
 
+=======
+>>>>>>> origin/main
 
 @client.event
 async def on_ready():
@@ -56,9 +59,12 @@ async def on_message(message):
 
   if message.content.startswith('!кот'):
     await message.channel.send(random.choice([cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13, cat14]))
+<<<<<<< HEAD
 
   if message.content.startswith('!тесткот'):
     await message.channel.send(testcat)
 
+=======
+>>>>>>> origin/main
 
 client.run(os.getenv('TOKEN'))
