@@ -17,24 +17,22 @@ baklazhan = "https://808.media/wp-content/uploads/2021/11/baklazhan-1.gif"
 ragnaros = "https://thumbs.gfycat.com/FlatElegantArmedcrab-size_restricted.gif"
 zluzyaCat = "http://img2.joyreactor.cc/pics/comment/%D0%B3%D0%B8%D1%84%D0%BA%D0%B0-%D0%BA%D0%BE%D1%82%D1%8D-%D1%80%D1%83%D0%BA%D0%B0-%D0%B7%D0%B0%D0%B4%D1%83%D0%BC%D0%B0%D0%BB%D1%81%D1%8F-2422589.gif"
 
-
-
 cat1 = "https://i.gifer.com/1Rda.gif"
-cat2 = "https://i.gifer.com/pMH.gif"
-cat3 = "https://i.gifer.com/sSD.gif"
-cat4 = "https://i.gifer.com/ii.gif"
-cat5 = "https://i.gifer.com/1Cs3.gif"
-cat6 = "https://i.gifer.com/MAOR.gif"
-cat7 = "https://i.gifer.com/7ZFG.gif"
-cat8 = "https://i.gifer.com/Aq.gif"
-cat9 = "https://i.gifer.com/v5T.gif"
-cat10 = "https://i.gifer.com/WU7.gif"
-cat11 = "https://img.btdmp.com/files/10224256/2021/09/18/16319758899dce7d9360.gif" 
-cat12 = "https://i.gifer.com/3Qe6.gif"
-cat13 = "https://i.gifer.com/JtaW.gif"
-cat14 = "https://i.gifer.com/11tv.gif"
-cat15 = "https://i.gifer.com/fzml.gif"
-cat16 = "https://i.gifer.com/Ao.gif"
+cat2 = "https://i.gifer.com/sSD.gif"
+cat3 = "https://i.gifer.com/1Cs3.gif"
+cat4 = "https://i.gifer.com/MAOR.gif"
+cat5 = "https://i.gifer.com/7ZFG.gif"
+cat6 = "https://i.gifer.com/Aq.gif"
+cat7 = "https://i.gifer.com/v5T.gif"
+cat8 = "https://i.gifer.com/WU7.gif"
+cat9 = "https://img.btdmp.com/files/10224256/2021/09/18/16319758899dce7d9360.gif" 
+cat10 = "https://i.gifer.com/3Qe6.gif"
+cat11 = "https://i.gifer.com/JtaW.gif"
+cat12 = "https://i.gifer.com/11tv.gif"
+cat13 = "https://i.gifer.com/Ao.gif"
+cat14 = "https://c.tenor.com/Ls7KslPkMqYAAAAd/surprised-cat-omg-wow.gif"
+
+testcat = "https://media.discordapp.net/attachments/862570143754223626/919840530131718194/happy-kitty.gif"
 
 @client.event
 async def on_ready():
@@ -55,6 +53,9 @@ async def on_message(message):
     await message.channel.send(random.choice([ragnaros, zluzyaCat]))
 
   if message.content.startswith('!кот'):
-    await message.channel.send(random.choice([cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13, cat14, cat15, cat16]))
+    await message.channel.send(random.choice([cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13, cat14]))
+
+  if message.content.startswith('!тесткот'):
+    await message.channel.send(testcat)
 
 client.run(os.getenv('TOKEN'))
