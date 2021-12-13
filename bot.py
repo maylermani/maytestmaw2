@@ -34,7 +34,7 @@ async def on_message(message):
   if '!хуй' in message.content or '!баклажан' in message.content:
     await message.channel.send(baklazhan)
 
-  if '!злюся' in message.content:
+  if '!злюся' in message.content or '!злюсь' in message.content:
     random_index = random.randrange(len(ragnaros))
     await message.channel.send(ragnaros[random_index])
 
