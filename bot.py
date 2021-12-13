@@ -32,6 +32,8 @@ async def on_message(message):
   if message.content.startswith('!maw'):
     await message.channel.send(random.choice([img2, img1, img3, img4, img5, img6, img7]))
 
+  if message.content.startswith('!баклажан'):
+    await message.channel.send(baklazhan)
   if message.content.startswith('!хуй'):
     await message.channel.send(baklazhan)
 
