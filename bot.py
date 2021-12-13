@@ -32,6 +32,8 @@ cat12 = "https://i.gifer.com/11tv.gif"
 cat13 = "https://i.gifer.com/Ao.gif"
 cat14 = "https://c.tenor.com/Ls7KslPkMqYAAAAd/surprised-cat-omg-wow.gif"
 
+testcat = "https://c.tenor.com/Ls7KslPkMqYAAAAd/surprised-cat-omg-wow.gif"
+
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
@@ -52,5 +54,8 @@ async def on_message(message):
 
   if message.content.startswith('!кот'):
     await message.channel.send(random.choice([cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13, cat14]))
+
+  if message.content.startswith('!ntcnrjn'):
+    await message.channel.send(testcat)
 
 client.run(os.getenv('TOKEN'))
