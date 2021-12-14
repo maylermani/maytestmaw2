@@ -33,6 +33,25 @@ bite = ["https://media.discordapp.net/attachments/862570143754223626/92019527513
 "https://media.discordapp.net/attachments/862570143754223626/920197654544273418/cat-finger-bite-cat.gif?width=475&height=603",
 "https://media.discordapp.net/attachments/862570143754223626/920197666909069363/rip-bite.gif"]
 
+ngcats = ["https://tenor.com/view/new-years-eve-happy2021-trash-2020-happy-gif-19680726",
+"https://tenor.com/view/holidays-happyholidays-newyears-newyearseve-happynewyear-gif-3615802",
+"https://tenor.com/view/happy-new-year-cats-funny-animals-gif-10400642",
+"https://tenor.com/view/holiday-cats-gif-13187783",
+"https://tenor.com/view/newyear-happy-new-year-cheers-duck-cat-gif-4894378",
+"https://tenor.com/view/cat-cats-gif-13510791",
+"https://tenor.com/view/smudge-cat-smudge-the-cat-fireworks-happy-new-year-new-year-gif-23933807",
+"https://tenor.com/view/business-cat-working-cat-boss-angry-gif-15945776",
+"https://tenor.com/view/kedi-cat-cat-christmas-happy-new-year2021-today-gif-19789933",
+"https://tenor.com/view/cat-cats-funny-light-sabers-light-saber-gif-19792677",
+"https://tenor.com/view/koshka-kotik-cat-miau-meow-gif-10601927",
+"https://tenor.com/view/dancing-cat-salsa-new-year-gif-13197808",
+"https://tenor.com/view/happy-new-years-eve-out-with-the-old-cat-christmas-tree-gif-15937624",
+"https://tenor.com/view/fran-healy-travis-huey-cat-happy-new-year-gif-24021052",
+"https://tenor.com/view/cat-2017-2016-bye2016-hello2017-gif-7413036",
+"https://tenor.com/view/new-year-new-me-funny-smile-funny-cats-funny-animals-gif-13202066",
+"https://tenor.com/view/graphene-happy-new-year-happy_new_year-happy-new-year2021-happy_new_year_2021-gif-19771243",
+"https://tenor.com/view/me-lon-cat-me-lon-happy-new-year-gif-19778302"]
+
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
@@ -60,5 +79,9 @@ async def on_message(message):
   if '!кусь' in message.content:
     random_index = random.randrange(len(bite))
     await message.channel.send(bite[random_index])
+
+  if '!нг' in message.content:
+    random_index = random.randrange(len(ngcats))
+    await message.channel.send(ngcats[random_index])
 
 client.run(os.getenv('TOKEN'))
