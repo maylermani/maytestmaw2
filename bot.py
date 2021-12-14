@@ -17,6 +17,21 @@ cats = ["https://media.discordapp.net/attachments/862570143754223626/91984053013
 "https://media.discordapp.net/attachments/862570143754223626/919884531392217118/sleep-cat-two-cat.gif?width=623&height=603",
 "https://media.discordapp.net/attachments/862570143754223626/919884537402650664/gatto-cibo.gif?width=603&height=603" ]
 
+bite = ["https://media.discordapp.net/attachments/862570143754223626/920195275132403812/cat-neck.gif",
+"https://media.discordapp.net/attachments/862570143754223626/920195275644096572/cat-angry.gif",
+"https://media.discordapp.net/attachments/862570143754223626/920195276164173885/gato-morder.gif",
+"https://media.discordapp.net/attachments/862570143754223626/920196250580688957/bite-cat.gif?width=603&height=603",
+"https://media.discordapp.net/attachments/862570143754223626/920196301780549682/discat-that-bites.gif",
+"https://media.discordapp.net/attachments/862570143754223626/920196310328545280/weird-crazy.gif?width=603&height=603",
+"https://media.discordapp.net/attachments/862570143754223626/920197033405612042/ear-bite.gif",
+"https://media.discordapp.net/attachments/862570143754223626/920197099675602974/cat-kitten.gif",
+"https://media.discordapp.net/attachments/862570143754223626/920197314335875072/kitty-windup.gif?width=482&height=603",
+"https://media.discordapp.net/attachments/862570143754223626/920197403863302175/cat-bite.gif",
+"https://media.discordapp.net/attachments/862570143754223626/920197463158169630/nom-tik-tok.gif?width=339&height=603",
+"https://media.discordapp.net/attachments/862570143754223626/920197481239822396/cat-bite.gif?width=482&height=603",
+"https://media.discordapp.net/attachments/862570143754223626/920197641541914634/cat-love-cat.gif",
+"https://media.discordapp.net/attachments/862570143754223626/920197654544273418/cat-finger-bite-cat.gif?width=475&height=603",
+"https://media.discordapp.net/attachments/862570143754223626/920197666909069363/rip-bite.gif"]
 
 @client.event
 async def on_ready():
@@ -41,5 +56,9 @@ async def on_message(message):
   if '!кот' in message.content:
     random_index = random.randrange(len(cats))
     await message.channel.send(cats[random_index])
+
+  if '!кусь' in message.content:
+    random_index = random.randrange(len(bite))
+    await message.channel.send(bite[random_index])
 
 client.run(os.getenv('TOKEN'))
