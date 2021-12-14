@@ -80,7 +80,7 @@ async def on_message(message):
     random_index = random.randrange(len(bite))
     await message.channel.send(bite[random_index])
 
-  if '!нг' in message.content:
+  if '!нгкот' in message.content:
     random_index = random.randrange(len(ngcats))
     await message.channel.send(ngcats[random_index])
 
