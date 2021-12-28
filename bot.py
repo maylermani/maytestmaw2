@@ -60,6 +60,8 @@ norm = ["http://memesmix.net/media/created/hmf983.jpg",
 "http://risovach.ru/upload/2016/05/mem/kot-zavis_114023153_orig_.jpg",
 "https://memepedia.ru/wp-content/uploads/2020/09/9ce2d3974b3dd6ca57cf9491b23c9949.jpg"]
 
+nehody = "https://media.discordapp.net/attachments/861938732525682699/925373506047320074/unknown.png";
+
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
@@ -95,5 +97,8 @@ async def on_message(message):
   if '!сойдет' in message.content:
     random_index = random.randrange(len(norm))
     await message.channel.send(norm[random_index])
+
+  if '!неходи' in message.content in message.content:
+    await message.channel.send(nehody)
 
 client.run(os.getenv('TOKEN'))
