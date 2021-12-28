@@ -52,6 +52,14 @@ ngcats = ["https://tenor.com/view/new-years-eve-happy2021-trash-2020-happy-gif-1
 "https://tenor.com/view/graphene-happy-new-year-happy_new_year-happy-new-year2021-happy_new_year_2021-gif-19771243",
 "https://tenor.com/view/me-lon-cat-me-lon-happy-new-year-gif-19778302"]
 
+norm = ["http://memesmix.net/media/created/hmf983.jpg",
+"http://memesmix.net/media/created/9oyqqy.jpg",
+"http://memesmix.net/media/created/h5v5kl.jpg",
+"http://memesmix.net/media/created/sidv0x.jpg",
+"https://www.meme-arsenal.com/memes/cf50e4e7a26ff4993db857247bcf724f.jpg",
+"http://risovach.ru/upload/2016/05/mem/kot-zavis_114023153_orig_.jpg",
+"https://memepedia.ru/wp-content/uploads/2020/09/9ce2d3974b3dd6ca57cf9491b23c9949.jpg"]
+
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
@@ -83,5 +91,9 @@ async def on_message(message):
   if '!нгкот' in message.content:
     random_index = random.randrange(len(ngcats))
     await message.channel.send(ngcats[random_index])
+
+  if '!сойдет' in message.content:
+    random_index = random.randrange(len(norm))
+    await message.channel.send(norm[random_index])
 
 client.run(os.getenv('TOKEN'))
