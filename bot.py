@@ -31,7 +31,8 @@ bite = ["https://media.discordapp.net/attachments/862570143754223626/92019527513
 "https://media.discordapp.net/attachments/862570143754223626/920197481239822396/cat-bite.gif?width=482&height=603",
 "https://media.discordapp.net/attachments/862570143754223626/920197641541914634/cat-love-cat.gif",
 "https://media.discordapp.net/attachments/862570143754223626/920197654544273418/cat-finger-bite-cat.gif?width=475&height=603",
-"https://media.discordapp.net/attachments/862570143754223626/920197666909069363/rip-bite.gif"]
+"https://media.discordapp.net/attachments/862570143754223626/920197666909069363/rip-bite.gif",
+"https://media.discordapp.net/attachments/861938732525682699/926087909705146398/tumblr_c96ef3c484626b199a0136b5eef9c169_0cf63c4d_400.gif"]
 
 ngcats = ["https://tenor.com/view/new-years-eve-happy2021-trash-2020-happy-gif-19680726",
 "https://tenor.com/view/holidays-happyholidays-newyears-newyearseve-happynewyear-gif-3615802",
