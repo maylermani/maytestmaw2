@@ -69,7 +69,7 @@ norm = ["http://memesmix.net/media/created/hmf983.jpg",
 
 nehody = "https://media.discordapp.net/attachments/861938732525682699/925373506047320074/unknown.png";
 
-help = "!maw, !баклажан, !злюсь, !кот, !кусь, !сойдет, !неходи";
+help = "!maw !баклажан !злюсь !кот !кусь !сойдет !неходи";
 
 @client.event
 async def on_ready():
@@ -110,7 +110,7 @@ async def on_message(message):
   if '!неходи' in message.content in message.content:
     await message.channel.send(nehody)
   
-  if '!help' in message.content in message.content:
+  if '!helphelp' in message.content in message.content:
     await message.channel.send(help)
 
 client.run(os.getenv('TOKEN'))
