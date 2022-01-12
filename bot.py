@@ -15,7 +15,13 @@ cats = ["https://media.discordapp.net/attachments/862570143754223626/91984053013
 "https://media.discordapp.net/attachments/862570143754223626/919884433341968414/schastye-kotiki.gif",
 "https://media.discordapp.net/attachments/862570143754223626/919884437976670248/bread-cats.gif",
 "https://media.discordapp.net/attachments/862570143754223626/919884531392217118/sleep-cat-two-cat.gif?width=623&height=603",
-"https://media.discordapp.net/attachments/862570143754223626/919884537402650664/gatto-cibo.gif?width=603&height=603" ]
+"https://media.discordapp.net/attachments/862570143754223626/919884537402650664/gatto-cibo.gif?width=603&height=603",
+"https://media.discordapp.net/attachments/862570143754223626/930773458101612564/cat-sleep.gif",
+"https://media.discordapp.net/attachments/862570143754223626/930773458768498718/cat-cats.gif",
+"https://media.discordapp.net/attachments/862570143754223626/930773459225681950/sleepy-sleep.gif",
+"https://media.discordapp.net/attachments/862570143754223626/930773459716440114/big-hug.gif",
+"https://media.discordapp.net/attachments/862570143754223626/930773460664340490/cat-hug.gif",
+"https://media.discordapp.net/attachments/862570143754223626/930773461398331402/cat-cats.gif?width=569&height=603" ]
 
 bite = ["https://media.discordapp.net/attachments/862570143754223626/920195275132403812/cat-neck.gif",
 "https://media.discordapp.net/attachments/862570143754223626/920195275644096572/cat-angry.gif",
@@ -63,6 +69,8 @@ norm = ["http://memesmix.net/media/created/hmf983.jpg",
 
 nehody = "https://media.discordapp.net/attachments/861938732525682699/925373506047320074/unknown.png";
 
+help = "!maw, !баклажан, !злюсь, !кот, !кусь, !сойдет, !неходи";
+
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
@@ -101,5 +109,8 @@ async def on_message(message):
 
   if '!неходи' in message.content in message.content:
     await message.channel.send(nehody)
+  
+  if '!help' in message.content in message.content:
+    await message.channel.send(help)
 
 client.run(os.getenv('TOKEN'))
