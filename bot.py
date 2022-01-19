@@ -67,6 +67,29 @@ norm = ["http://memesmix.net/media/created/hmf983.jpg",
 "http://risovach.ru/upload/2016/05/mem/kot-zavis_114023153_orig_.jpg",
 "https://memepedia.ru/wp-content/uploads/2020/09/9ce2d3974b3dd6ca57cf9491b23c9949.jpg"]
 
+foxs = ["https://tenor.com/view/fox-cute-adorable-gif-15311172",
+"https://tenor.com/view/fox-gif-23017609",
+"https://tenor.com/view/fox-bite-attack-snow-gif-14065812",
+"https://tenor.com/view/cute-jump-fox-artic-fox-gif-10954757",
+"https://tenor.com/view/fox-babies-foxes-biting-yummy-gif-11278762",
+"https://tenor.com/view/fox-insane-crazy-losing-it-animal-gif-17548624",
+"https://tenor.com/view/fox-cute-sleepy-gif-11781776",
+"https://tenor.com/view/pet-a-fox-cute-fox-fox-gif-22514095",
+"https://tenor.com/view/brown-fox-dog-lazy-gif-10445506",
+"https://tenor.com/view/hmmm-fox-gif-20955251",
+"https://tenor.com/view/funny-animals-fox-bounce-gif-12253057",
+"https://tenor.com/view/fox-cute-pet-happy-smile-gif-16846934",
+"https://tenor.com/view/fox-funny-animals-cute-hair-brush-grooming-gif-8952998",
+"https://tenor.com/view/funny-animals-fox-eating-gluttony-when-they-say-they-are-gluten-free-you-im-gluten-free-me-gif-10234708",
+"https://tenor.com/view/jerk-what-does-the-fox-say-tongue-fox-bleh-gif-4486853",
+"https://tenor.com/view/fox-cute-funny-starbucks-wake-gif-9541964",
+"https://tenor.com/view/fox-happy-tail-wag-sleepy-listening-gif-4918833",
+"https://tenor.com/view/fox-smile-cute-gif-15311132",
+"https://tenor.com/view/fox-belly-rubs-cute-foxes-pet-gif-4918788",
+"https://tenor.com/view/fox-cute-adorable-gif-15311166",
+"https://tenor.com/view/fox-lots-of-foxes-fluffy-horde-gif-18777084"]
+
+
 nehody = "https://media.discordapp.net/attachments/861938732525682699/925373506047320074/unknown.png";
 
 help = "!maw !баклажан !злюсь !кот !кусь !сойдет !неходи";
@@ -112,5 +135,9 @@ async def on_message(message):
   
   if '!helphelp' in message.content in message.content:
     await message.channel.send(help)
+
+  if '!лис' in message.content:
+    random_index = random.randrange(len(foxs))
+    await message.channel.send(foxs[random_index])
 
 client.run(os.getenv('TOKEN'))
