@@ -92,7 +92,7 @@ foxs = ["https://tenor.com/view/fox-cute-adorable-gif-15311172",
 
 nehody = "https://media.discordapp.net/attachments/861938732525682699/925373506047320074/unknown.png";
 
-help = "!maw !баклажан !злюсь !кот !кусь !сойдет !неходи";
+help = "!maw !баклажан !злюсь !кот !кусь !сойдет !неходи !лис";
 
 @client.event
 async def on_ready():
