@@ -21,7 +21,8 @@ cats = ["https://media.discordapp.net/attachments/862570143754223626/91984053013
 "https://media.discordapp.net/attachments/862570143754223626/930773459225681950/sleepy-sleep.gif",
 "https://media.discordapp.net/attachments/862570143754223626/930773459716440114/big-hug.gif",
 "https://media.discordapp.net/attachments/862570143754223626/930773460664340490/cat-hug.gif",
-"https://media.discordapp.net/attachments/862570143754223626/930773461398331402/cat-cats.gif?width=569&height=603" ]
+"https://media.discordapp.net/attachments/862570143754223626/930773461398331402/cat-cats.gif?width=569&height=603",
+"https://media.discordapp.net/attachments/862570143754223626/934752882824187904/cute-cat.gif" ]
 
 bite = ["https://media.discordapp.net/attachments/862570143754223626/920195275132403812/cat-neck.gif",
 "https://media.discordapp.net/attachments/862570143754223626/920195275644096572/cat-angry.gif",
@@ -89,6 +90,23 @@ foxs = ["https://tenor.com/view/fox-cute-adorable-gif-15311172",
 "https://tenor.com/view/fox-cute-adorable-gif-15311166",
 "https://tenor.com/view/fox-lots-of-foxes-fluffy-horde-gif-18777084"]
 
+ravens = ["https://tenor.com/view/crow-raven-kar-vorona-gif-11111592",
+"https://tenor.com/view/food-gif-22015888",
+"https://tenor.com/view/crow-bow-gif-18499721",
+"https://tenor.com/view/the-crow-brandon-lee-crow-raven-tombstone-gif-12575684",
+"https://tenor.com/view/pet-raven-crow-bird-cuddle-gif-15379661",
+"https://tenor.com/view/ookbob-crow-spinning-crow-ceiling-fan-funny-bird-gif-20851786",
+"https://tenor.com/view/yyy-crow-why-gif-15278387",
+"https://tenor.com/view/raven-gif-20069584",
+"https://tenor.com/view/funny-animals-frey-crow-dogs-crows-gif-14368269",
+"https://tenor.com/view/pet-crow-egg-good-bird-bird-gif-13777072",
+"https://tenor.com/view/dark-souls-thepruld-crow-solaire-sunlight-lautrec-oscar-knight-dance-gif-18427086",
+"https://tenor.com/view/crow-bird-gif-8893792",
+"https://tenor.com/view/dog-startled-scared-crow-jump-gif-3967021",
+"https://tenor.com/view/dark-souls-dance-sif-gif-14567450",
+"https://tenor.com/view/dark-souls-thepruld-solaire-of-astora-sunlight-warrior-sif-grey-wolf-dance-gif-18427159",
+"https://tenor.com/view/darksouls-demon-souls-gif-19056864"]
+
 
 nehody = "https://media.discordapp.net/attachments/861938732525682699/925373506047320074/unknown.png";
 
@@ -139,5 +157,9 @@ async def on_message(message):
   if '!лис' in message.content:
     random_index = random.randrange(len(foxs))
     await message.channel.send(foxs[random_index])
+
+  if '!кар' in message.content:
+    random_index = random.randrange(len(ravens))
+    await message.channel.send(ravens[random_index])
 
 client.run(os.getenv('TOKEN'))
