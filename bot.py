@@ -22,7 +22,12 @@ cats = ["https://media.discordapp.net/attachments/862570143754223626/91984053013
 "https://media.discordapp.net/attachments/862570143754223626/930773459716440114/big-hug.gif",
 "https://media.discordapp.net/attachments/862570143754223626/930773460664340490/cat-hug.gif",
 "https://media.discordapp.net/attachments/862570143754223626/930773461398331402/cat-cats.gif?width=569&height=603",
-"https://media.discordapp.net/attachments/862570143754223626/934752882824187904/cute-cat.gif" ]
+"https://media.discordapp.net/attachments/862570143754223626/934752882824187904/cute-cat.gif",
+"https://c.tenor.com/-L3KmHAaMGcAAAAd/manul-sneak.gif",
+"https://c.tenor.com/HSjA9S4R4osAAAAd/manul.gif",
+"https://c.tenor.com/mpwUJliEKywAAAAd/elisttm-jotism.gif",
+"https://c.tenor.com/sdo7BUeRFtYAAAAd/elisttm-jotism.gif",
+"https://c.tenor.com/oy-mdeRTit0AAAAd/snow-manul-cat.gif"]
 
 bite = ["https://media.discordapp.net/attachments/862570143754223626/920195275132403812/cat-neck.gif",
 "https://media.discordapp.net/attachments/862570143754223626/920195275644096572/cat-angry.gif",
@@ -88,7 +93,8 @@ foxs = ["https://tenor.com/view/fox-cute-adorable-gif-15311172",
 "https://tenor.com/view/fox-smile-cute-gif-15311132",
 "https://tenor.com/view/fox-belly-rubs-cute-foxes-pet-gif-4918788",
 "https://tenor.com/view/fox-cute-adorable-gif-15311166",
-"https://tenor.com/view/fox-lots-of-foxes-fluffy-horde-gif-18777084"]
+"https://tenor.com/view/fox-lots-of-foxes-fluffy-horde-gif-18777084",
+"https://c.tenor.com/tjNWAMnU11kAAAAi/fox.gif"]
 
 ravens = ["https://tenor.com/view/crow-raven-kar-vorona-gif-11111592",
 "https://tenor.com/view/food-gif-22015888",
@@ -105,7 +111,12 @@ ravens = ["https://tenor.com/view/crow-raven-kar-vorona-gif-11111592",
 "https://tenor.com/view/dog-startled-scared-crow-jump-gif-3967021",
 "https://tenor.com/view/dark-souls-dance-sif-gif-14567450",
 "https://tenor.com/view/dark-souls-thepruld-solaire-of-astora-sunlight-warrior-sif-grey-wolf-dance-gif-18427159",
-"https://tenor.com/view/darksouls-demon-souls-gif-19056864"]
+"https://tenor.com/view/darksouls-demon-souls-gif-19056864",
+"https://c.tenor.com/NczONFOynDwAAAAC/cuddle-raven.gif",
+"https://c.tenor.com/3XaW0-r2UR8AAAAC/follow-join.gif",
+"https://c.tenor.com/gvGn0JMdbZwAAAAC/workout-goth.gif",
+"https://c.tenor.com/oT78bEvJZGoAAAAd/vsm.gif",
+"https://c.tenor.com/7WKc50AMcoMAAAAC/wolf-crow.gif"]
 
 
 nehody = "https://media.discordapp.net/attachments/861938732525682699/925373506047320074/unknown.png";
