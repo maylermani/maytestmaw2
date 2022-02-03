@@ -159,7 +159,7 @@ async def on_message(message):
     random_index = random.randrange(len(norm))
     await message.channel.send(norm[random_index])
 
-  if '!неходи' in message.content in message.content:
+  if '!неходи' in message.content or '!уходи' in message.content:
     await message.channel.send(nehody)
   
   if '!helphelp' in message.content in message.content:
