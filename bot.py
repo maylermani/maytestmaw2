@@ -94,7 +94,8 @@ foxs = ["https://tenor.com/view/fox-cute-adorable-gif-15311172",
 "https://tenor.com/view/fox-belly-rubs-cute-foxes-pet-gif-4918788",
 "https://tenor.com/view/fox-cute-adorable-gif-15311166",
 "https://tenor.com/view/fox-lots-of-foxes-fluffy-horde-gif-18777084",
-"https://c.tenor.com/tjNWAMnU11kAAAAi/fox.gif"]
+"https://c.tenor.com/tjNWAMnU11kAAAAi/fox.gif",
+"https://images-ext-2.discordapp.net/external/pSrgNsoKkAMyjCwJMOVV0duCLIpy0hiiXS4chuP98z4/https/pbs.twimg.com/tweet_video_thumb/FLBFYC4WYAA_Lnz.jpg"]
 
 ravens = ["https://tenor.com/view/crow-raven-kar-vorona-gif-11111592",
 "https://tenor.com/view/food-gif-22015888",
