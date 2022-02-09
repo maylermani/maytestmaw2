@@ -27,7 +27,8 @@ cats = ["https://media.discordapp.net/attachments/862570143754223626/91984053013
 "https://c.tenor.com/HSjA9S4R4osAAAAd/manul.gif",
 "https://c.tenor.com/mpwUJliEKywAAAAd/elisttm-jotism.gif",
 "https://c.tenor.com/sdo7BUeRFtYAAAAd/elisttm-jotism.gif",
-"https://c.tenor.com/oy-mdeRTit0AAAAd/snow-manul-cat.gif"]
+"https://c.tenor.com/oy-mdeRTit0AAAAd/snow-manul-cat.gif",
+"https://tenor.com/view/munchkin-cat-kitten-kitty-pussy-cat-gif-17083431"]
 
 bite = ["https://media.discordapp.net/attachments/862570143754223626/920195275132403812/cat-neck.gif",
 "https://media.discordapp.net/attachments/862570143754223626/920195275644096572/cat-angry.gif",
