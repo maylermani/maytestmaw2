@@ -134,8 +134,7 @@ ravens = ["https://tenor.com/view/crow-raven-kar-vorona-gif-11111592",
 
 nehody = "https://media.discordapp.net/attachments/861938732525682699/925373506047320074/unknown.png";
 
-rabbits = [
-"https://tenor.com/bRWVa.gif",
+rabbits = ["https://tenor.com/bRWVa.gif",
 "https://tenor.com/bSNcP.gif",
 "https://tenor.com/bSGY1.gif",
 "https://tenor.com/bSMuf.gif",
