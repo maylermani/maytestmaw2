@@ -118,12 +118,34 @@ ravens = ["https://tenor.com/view/crow-raven-kar-vorona-gif-11111592",
 "https://c.tenor.com/3XaW0-r2UR8AAAAC/follow-join.gif",
 "https://c.tenor.com/gvGn0JMdbZwAAAAC/workout-goth.gif",
 "https://c.tenor.com/oT78bEvJZGoAAAAd/vsm.gif",
-"https://c.tenor.com/7WKc50AMcoMAAAAC/wolf-crow.gif"]
-
+"https://c.tenor.com/7WKc50AMcoMAAAAC/wolf-crow.gif",
+"https://tenor.com/view/dark-souls-ya-sobaka-ti-sobaka-yasosy-biby-gif-19664947",
+"https://tenor.com/bEeru.gif",
+"https://tenor.com/bMaEt.gif",
+"https://tenor.com/bGlro.gif",
+"https://tenor.com/bOSUD.gif",  
+"https://tenor.com/74MR.gif",
+"https://tenor.com/bKGum.gif",
+"https://tenor.com/bKTQP.gif",
+"https://tenor.com/bK1EB.gif",
+"https://tenor.com/bxpVY.gif",
+"https://tenor.com/bD5Lh.gif",
+"https://tenor.com/YVIC.gif"]
 
 nehody = "https://media.discordapp.net/attachments/861938732525682699/925373506047320074/unknown.png";
 
-help = "!maw !баклажан !злюсь !кот !кусь !сойдет !неходи !лис";
+rabbits = [
+"https://tenor.com/bRWVa.gif",
+"https://tenor.com/bSNcP.gif",
+"https://tenor.com/bSGY1.gif",
+"https://tenor.com/bSMuf.gif",
+"https://tenor.com/bSOwM.gif",
+"https://tenor.com/bSBaZ.gif",
+"https://tenor.com/bSOIG.gif",
+"https://tenor.com/6OD9.gif",
+"https://tenor.com/bizXQ.gif"];
+
+help = "!maw !баклажан !злюсь !кот !кусь !сойдет !неходи !лис !кар";
 
 @client.event
 async def on_ready():
@@ -174,5 +196,9 @@ async def on_message(message):
   if '!кар' in message.content:
     random_index = random.randrange(len(ravens))
     await message.channel.send(ravens[random_index])
+
+  if '!кроль' in message.content:
+    random_index = random.randrange(len(rabbits))
+    await message.channel.send(rabbits[random_index])
 
 client.run(os.getenv('TOKEN'))
